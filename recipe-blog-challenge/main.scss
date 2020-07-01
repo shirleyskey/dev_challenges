@@ -1,0 +1,256 @@
+                @import 'fonts';
+                // Color 
+                $primary-color: #4F4F4F;
+                $background-color: #FFFFFF;
+                $secondary-color:#FFFFFF;
+                $third-color:#F2994A;
+                $black-color: #000;
+                $title-color: #333333; //Font
+                $primary-font: 'Montserrat',
+                sans-serif;
+                $secondary-font:'Playfair Display',
+                serif;
+                // Style
+                * {
+                    margin: 0px;
+                    padding: 0px;
+                    box-sizing: border-box;
+                }
+                
+                html {
+                    overflow: hidden;
+                }
+                
+                body {
+                    position: relative;
+                    max-height: 100vh;
+                    padding: 8vh 15vw;
+                    overflow: auto;
+                    /* this will hide the scrollbar in mozilla based browsers */
+                    overflow: -moz-scrollbars-none;
+                    /* this will hide the scrollbar in internet explorers */
+                    -ms-overflow-style: none;
+                }
+                
+                footer {
+                    margin-top: 108px;
+                    p {
+                        width: 100vw;
+                        font-family: Montserrat;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        /* identical to box height */
+                        color: #A9A9A9;
+                    }
+                }
+                
+                body::-webkit-scrollbar {
+                    width: 0 !important;
+                    display: none;
+                }
+                
+                .intro {
+                    &__title {
+                        font-family: $primary-color;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 48px;
+                        line-height: 64px;
+                        color: $black-color;
+                    }
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        span {
+                            color: #C4C4C4;
+                        }
+                        .intro__description {
+                            width: 592px;
+                            height: 51px;
+                            font-family: $primary-font;
+                            font-style: italic;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: $primary-color;
+                            margin-bottom: 40px;
+                            margin-left: 10px;
+                        }
+                    }
+                    &__img {
+                        background-image: url(image8.png);
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 470px;
+                        border-radius: 10px;
+                        margin-bottom: 32px;
+                    }
+                }
+                
+                .left-bar {
+                    display: flex;
+                    flex-direction: row;
+                    .ingre {
+                        width: 50vw;
+                        &__title {
+                            font-family: $primary-font;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: $title-color;
+                            margin-bottom: 32px;
+                        }
+                        &__material {
+                            &--name {
+                                font-family: $primary-font;
+                                font-style: italic;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 24px;
+                                color: $title-color;
+                                margin-bottom: 31px;
+                                margin-top: 38px;
+                            }
+                            &--detail {
+                                font-family: $primary-font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 25px;
+                                color: $title-color;
+                                margin-bottom: 3px;
+                                input {
+                                    margin-right: 17px;
+                                }
+                            }
+                        }
+                        .instrucion {
+                            &__title {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 32px;
+                                color: $title-color;
+                                margin-top: 30px;
+                                margin-bottom: 30px;
+                            }
+                            ol {
+                                counter-reset: li;
+                                li {
+                                    list-style: none;
+                                    position: relative;
+                                    margin-bottom: 22px;
+                                    padding-left: 33px;
+                                }
+                            }
+                            ol li:before {
+                                content: counter(li);
+                                counter-increment: li;
+                                position: absolute;
+                                top: -2px;
+                                left: -2em;
+                                -moz-box-sizing: border-box;
+                                -webkit-box-sizing: border-box;
+                                box-sizing: border-box;
+                                width: 2em;
+                                margin-left: 20px;
+                                padding: 4px;
+                                color: #fff;
+                                background: $third-color;
+                                border-radius: 5px;
+                                font-family: $secondary-font;
+                                text-align: center;
+                            }
+                            &__detail {
+                                font-family: $primary-font;
+                                font-style: normal;
+                                font-size: 16px;
+                                line-height: 150%;
+                                color: $title-color;
+                            }
+                        }
+                    }
+                    .ingre__des {
+                        width: 20vw;
+                        margin-top: 40px;
+                        &__item {
+                            margin-bottom: 43px;
+                            display: flex;
+                            &--icon {
+                                font-size: 30px;
+                                margin-right: 20px;
+                            }
+                            &--icon:hover {
+                                color: $third-color;
+                            }
+                            div {
+                                .ingre__des__item--name {
+                                    font-family: Montserrat;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    text-transform: uppercase;
+                                    /* Gray 4 */
+                                    color: #BDBDBD;
+                                }
+                                .ingre__des__item--time {
+                                    font-family: Montserrat;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    /* identical to box height */
+                                    /* Gray 1 */
+                                    color: #333333;
+                                }
+                                .ingre__des__item--time:hover {
+                                    color: $third-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                @media only screen and (max-width: 375px) {
+                    .intro {
+                        .intro__title {
+                            font-size: 24px;
+                            line-height: 32px;
+                            margin-bottom: 20px;
+                        }
+                        div {
+                            margin-bottom: 20px;
+                            .intro__description {
+                                font-size: 12px;
+                                line-height: 15px
+                            }
+                        }
+                        .intro__img {
+                            height: 200px;
+                        }
+                    }
+                    .left-bar {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        .ingre__des {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        .ingre {
+                            width: 70vw;
+                            .instrucion {}
+                        }
+                    }
+                    footer {
+                        p {
+                            width: 70vw;
+                        }
+                    }
+                }

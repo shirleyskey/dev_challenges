@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  max-height: 100vh;
+  padding: 8vh 15vw;
+  overflow: auto;
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
+}
+
+footer {
+  margin-top: 108px;
+}
+footer p {
+  width: 100vw;
+  font-family: Montserrat;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #A9A9A9;
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+.intro__title {
+  font-family: #4F4F4F;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  color: #000;
+}
+.intro div {
+  display: flex;
+  flex-direction: row;
+}
+.intro div span {
+  color: #C4C4C4;
+}
+.intro div .intro__description {
+  width: 592px;
+  height: 51px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F4F4F;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.intro__img {
+  background-image: url(image8.png);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: row;
+}
+.left-bar .ingre {
+  width: 50vw;
+}
+.left-bar .ingre__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 32px;
+}
+.left-bar .ingre__material--name {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 31px;
+  margin-top: 38px;
+}
+.left-bar .ingre__material--detail {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+  margin-bottom: 3px;
+}
+.left-bar .ingre__material--detail input {
+  margin-right: 17px;
+}
+.left-bar .ingre .instrucion__title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.left-bar .ingre .instrucion ol {
+  counter-reset: li;
+}
+.left-bar .ingre .instrucion ol li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 33px;
+}
+.left-bar .ingre .instrucion ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  top: -2px;
+  left: -2em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2em;
+  margin-left: 20px;
+  padding: 4px;
+  color: #fff;
+  background: #F2994A;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.left-bar .ingre .instrucion__detail {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333333;
+}
+.left-bar .ingre__des {
+  width: 20vw;
+  margin-top: 40px;
+}
+.left-bar .ingre__des__item {
+  margin-bottom: 43px;
+  display: flex;
+}
+.left-bar .ingre__des__item--icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+.left-bar .ingre__des__item--icon:hover {
+  color: #F2994A;
+}
+.left-bar .ingre__des__item div .ingre__des__item--name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  /* Gray 4 */
+  color: #BDBDBD;
+}
+.left-bar .ingre__des__item div .ingre__des__item--time {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  /* Gray 1 */
+  color: #333333;
+}
+.left-bar .ingre__des__item div .ingre__des__item--time:hover {
+  color: #F2994A;
+}
+
+@media only screen and (max-width: 375px) {
+  .intro .intro__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .intro div {
+    margin-bottom: 20px;
+  }
+  .intro div .intro__description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .intro .intro__img {
+    height: 200px;
+  }
+
+  .left-bar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .left-bar .ingre__des {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left-bar .ingre {
+    width: 70vw;
+  }
+  footer p {
+    width: 70vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
