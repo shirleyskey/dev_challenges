@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 19%;
+}
+
+.logo h3 {
+    position: absolute;
+    left: 5.34%;
+    top: 40px;
+    /* Text */
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.found {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    height: 70%;
+}
+
+.found__text {
+    position: absolute;
+    width: 50%;
+    right: 0%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.found__img {
+    position: absolute;
+    width: 465px;
+    height: 382px;
+    top: 0px;
+    left: 77px;
+    /* Background  */
+    background-image: url(Scarecrow.png);
+    background-size: cover;
+}
+
+.found__text--title {
+    width: 586px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 59px;
+    line-height: 60px;
+    letter-spacing: -0.035em;
+    /* Gray 1 */
+    color: #333333;
+}
+
+.found__text--description {
+    width: 381px;
+    margin-top: 25px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+
+.found__text--button {
+    margin-top: 42px;
+    padding: 24px 43px;
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    text-align: center;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+
+footer p {
+    position: absolute;
+    bottom: 10px;
+    width: 100vw;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #333333;
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        height: 10%;
+    }
+    .logo h3 {
+        position: absolute;
+        width: 133px;
+        height: 25px;
+        left: 24px;
+        top: 20px;
+        /* Text */
+        font-family: Inconsolata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    .found {
+        flex-direction: column;
+    }
+    .found__img {
+        position: relative;
+        width: 286px;
+        height: 220px;
+        left: 44px;
+    }
+    .found__text {
+        position: relative;
+        width: 100vw;
+    }
+    .found__text--title {
+        font-size: 48px;
+        width: 100vw;
+        margin-top: 10px;
+        padding: 5px 18px;
+    }
+    .found__text--description {
+        width: 99vw;
+        font-size: 18px;
+        padding-left: 18px;
+        margin-bottom: 67px;
+    }
+    .found__text--button {
+        width: 216px;
+        margin: auto;
+        margin-top: 67px;
+        font-size: 12px;
+    }
+    footer {
+        width: 100vw;
+    }
+}
